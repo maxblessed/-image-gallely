@@ -1,0 +1,97 @@
+body{
+    background-color: #000;
+  text-align: center;
+  font-family: verdana;
+  box-sizing: border-box;
+  background-color: hsla(0,0%,0%,0.9);
+}
+h1{
+  color:gray;
+}
+/* styling the container of the image  */
+#cont{
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(4,20%);
+  grid-column-gap: 8px;
+}
+/*styling the container children*/
+#cont .contc{
+  position: relative;
+}
+
+/*styling the image inside the container children*/
+#cont .contc img{
+  width:100%;
+  position: absolute;
+  border-radius: 3px;
+}
+
+/*syling the modal */
+#modal{
+  position:fixed;
+  width:60%;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 1000;
+  height: 400px;
+  display: none;
+}
+/*syling the modal image*/
+#modal img{
+  width:300px;
+  height: 300px;
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+
+}
+/*syling the span */
+p{
+  color:gray;
+  position: fixed;
+  display: none;
+  font-size: 40px;
+  top:10%;
+  right:20%;
+  text-align: center;
+  font-weight: medium;
+  font-family: sans-serif;
+  transform: translate(20%,-100%);
+  z-index: 1000;
+  cursor: pointer;
+
+}
+/*styling the right button */
+#right{
+    position: fixed;
+    font-family: verdana;
+      z-index: 1000;
+      right:20%;
+      top:40%;
+      height:50px;
+      width: 50px;
+    outline: none;
+      border: none;
+      background-color: hsla(0,0%,0%,0.1);
+        cursor: pointer;
+}
+
+/*styling the left button*/
+#left{
+    position: fixed;
+    font-family: verdana;
+      z-index: 1000;
+      left:20%;
+      top:40%;
+      height:50px;
+      width: 50px;
+      outline: none;
+      border: none;
+        background-color: hsla(0,0%,0%,0.1);
+          cursor: pointer;
+}
